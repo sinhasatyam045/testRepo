@@ -1,0 +1,20 @@
+.chessboard {
+  display: grid;
+  grid-template-columns: repeat(5, 60px);
+  grid-template-rows: repeat(5, 60px);
+  gap: 8px;
+}
+
+.square {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+
+.selected {
+  background-color: blue; /* This will be the background color for the selected piece */
+}
